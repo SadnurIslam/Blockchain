@@ -41,4 +41,9 @@ bc.add_block("First block data")
 bc.add_block("Second block data")
 
 for block in bc.chain:
-    print(block.__dict__)
+    print("Index:", block.index)
+    print("Timestamp:", block.timestamp)
+    print("Data:", block.data)
+    print("Prev Hash:", block.previous_hash)
+    print("Hash:", block.hash)
+    print("-"*40)
