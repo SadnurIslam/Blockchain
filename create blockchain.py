@@ -7,7 +7,7 @@ Write a program in Python to implement blockchain.
 step 1: block creation
     hash = index+timestamp+data+previous hash
 
-step 2: blockchain creation
+step 2: blockchain creation (class or list, here we use class)
     create genesis block (first block with index 0 and previous hash 0)
     add new blocks with reference to previous block's hash
     
@@ -58,4 +58,5 @@ for block in bc.chain:
     print("Data:", block.data)
     print("Prev Hash:", block.previous_hash)
     print("Hash:", block.hash)
-    print("-"*40)
+    
+    print("-"*40)   # optional : just print separator for better readability

@@ -3,6 +3,17 @@ Write a program in Python to create four new blocks in a blockchain. Traverse th
 print the values
 """
 
+"""
+step 1: block creation
+    hash = index+timestamp+data+previous hash
+
+step 2: blockchain creation (class or list, here we use list)
+    create genesis block (first block with index 0 and previous hash 0)
+    add new blocks with reference to previous block's hash
+    
+step 3: traverse and print blocks
+"""
+
 import hashlib
 import time
 
@@ -40,4 +51,5 @@ for block in blockchain:
     print("Data:", block.data)
     print("Prev Hash:", block.previous_hash)
     print("Hash:", block.hash)
+    
     print("-"*40)
