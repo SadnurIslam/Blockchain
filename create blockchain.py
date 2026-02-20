@@ -3,6 +3,18 @@ Write a program in Python to implement blockchain.
 """
 
 
+"""
+step 1: block creation
+    hash = index+timestamp+data+previous hash
+
+step 2: blockchain creation
+    create genesis block (first block with index 0 and previous hash 0)
+    add new blocks with reference to previous block's hash
+    
+step 3: traverse and print blocks
+"""
+
+
 import hashlib
 import time
 
