@@ -19,6 +19,6 @@ print("Latest Block Number:", block_number)
 
 
 """
-pre requisite coomand: pip install requests
+pre requisite command: pip install requests
 
 """
