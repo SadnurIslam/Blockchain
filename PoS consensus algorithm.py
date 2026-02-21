@@ -12,8 +12,10 @@ validators = {
 }
 
 def select_validator():
-    total = sum(validators.values())
-    pick = random.uniform(0,total)
+    total = sum(validators.values())   # 50+30+20 = 100
+    #print(total)   
+    pick = random.uniform(0,total)   # 0-100
+    #print(pick)
     current = 0
 
     for v,stake in validators.items():
